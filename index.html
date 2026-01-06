@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Electrofix | Servicio Técnico Profesional</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="header">
+    <div class="nav container">
+        <div class="logo">Electro<span>fix</span></div>
+        <nav>
+            <a href="#servicios">Servicios</a>
+            <a href="#beneficios">Por qué elegirnos</a>
+            <a href="#testimonios">Testimonios</a>
+            <a href="#" class="btn-nav" onclick="openWhatsApp(event)">WhatsApp</a>
+        </nav>
+    </div>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+        <h1>Soluciones rápidas y garantizadas<br>para tus electrodomésticos</h1>
+        <p>Servicio técnico profesional a domicilio</p>
+
+        <a href="#" class="btn-primary" onclick="openWhatsApp(event)">
+            Solicitar servicio
+        </a>
+
+        <div class="hero-features">
+            ⏱ Atención rápida • 🔧 Garantía • 📍 Servicio a domicilio
+        </div>
+    </div>
+</section>
+
+<!-- SERVICIOS -->
+<section id="servicios" class="container">
+    <h2 class="section-title">Nuestros Servicios</h2>
+    <div class="cards">
+        <div class="card premium" onclick="openWhatsApp(event,'lavadora')">
+            <i class="fa-solid fa-soap"></i>
+            <h3>Lavadoras</h3>
+            <p>Reparación eléctrica, mecánica y drenaje.</p>
+        </div>
+
+        <div class="card premium highlight" onclick="openWhatsApp(event,'nevera')">
+            <i class="fa-solid fa-snowflake"></i>
+            <h3>Neveras</h3>
+            <p>Especialistas en refrigeración y carga de gas.</p>
+        </div>
+
+        <div class="card premium" onclick="openWhatsApp(event,'secadora')">
+            <i class="fa-solid fa-wind"></i>
+            <h3>Secadoras</h3>
+            <p>Soluciones rápidas y garantizadas.</p>
+        </div>
+    </div>
+</section>
+
+<!-- BENEFICIOS -->
+<section id="beneficios" class="benefits">
+    <div class="container">
+        <h2 class="section-title">¿Por qué elegir Electrofix?</h2>
+        <div class="benefits-grid">
+            <div><i class="fa-solid fa-user-check"></i><p>Técnicos certificados</p></div>
+            <div><i class="fa-solid fa-clock"></i><p>Atención rápida</p></div>
+            <div><i class="fa-solid fa-shield-halved"></i><p>Garantía real</p></div>
+            <div><i class="fa-solid fa-house"></i><p>Servicio a domicilio</p></div>
+        </div>
+    </div>
+</section>
+
+<!-- STATS -->
+<section class="stats">
+    <div class="container stats-grid">
+        <div><span class="counter" data-target="500">0</span><p>Servicios realizados</p></div>
+        <div><span class="counter" data-target="8">0</span><p>Años de experiencia</p></div>
+        <div><span class="counter" data-target="100">0</span><p>% Clientes satisfechos</p></div>
+    </div>
+</section>
+
+<!-- TESTIMONIOS -->
+<section id="testimonios" class="container">
+    <h2 class="section-title">Lo que dicen nuestros clientes</h2>
+    <div class="testimonials">
+        <div class="testimonial">
+            ⭐⭐⭐⭐⭐
+            <p>Excelente servicio, rápidos y muy profesionales.</p>
+            <strong>– Carlos M.</strong>
+        </div>
+        <div class="testimonial">
+            ⭐⭐⭐⭐⭐
+            <p>Mi nevera quedó como nueva, recomendados 100%.</p>
+            <strong>– Ana R.</strong>
+        </div>
+    </div>
+</section>
+
+<!-- FAQ -->
+<section class="faq">
+    <div class="container">
+        <h2 class="section-title">Preguntas frecuentes</h2>
+        <details>
+            <summary>¿El servicio tiene garantía?</summary>
+            <p>Sí, todos nuestros trabajos cuentan con garantía.</p>
+        </details>
+        <details>
+            <summary>¿Atienden a domicilio?</summary>
+            <p>Sí, vamos hasta tu hogar.</p>
+        </details>
+        <details>
+            <summary>¿Cómo agendo un servicio?</summary>
+            <p>Escríbenos por WhatsApp y te atendemos de inmediato.</p>
+        </details>
+    </div>
+</section>
+
+<!-- CONTACTO -->
+<section id="contacto" class="contact container">
+    <h2 class="section-title">Agenda tu servicio ahora</h2>
+    <a href="#" class="btn-primary" onclick="openWhatsApp(event)">
+        Escríbenos por WhatsApp
+    </a>
+</section>
+
+<footer class="footer">
+    © <span id="year"></span> Electrofix · Servicio Técnico Profesional
+</footer>
+
+<!-- WHATSAPP FLOAT -->
+<a href="#" class="whatsapp-float" onclick="openWhatsApp(event)">
+    <i class="fab fa-whatsapp"></i>
+</a>
+
+<script src="script.js"></script>
+</body>
+</html>
